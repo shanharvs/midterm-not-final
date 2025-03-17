@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>COLLEGE</title>
+    <link rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4e7;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cae4ce;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        nav li:hover {
+            color: #276967;
+        }
+
+        nav li:active {
+            color: #33443C;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #276967;
+        }
+
+        nav a:active {
+            color: #33443C;
+        }
+
+        .biography-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 1px 2px 3px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+        font-family: Georgia;
+        display: inline;
+        font-size: 35px;
+        color: #8FC0A9;
+        margin: 20px;
+        text-shadow: 1px 1px 1px black;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #33443C;
+        text-underline-offset: 12px;
+        }
+
+        .background-text {
+            position: absolute;
+            font-size: 150px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.07);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .biography-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 10px 30px 20px 0;
+            background-color: #cae4ce;
+            color: white;
+            text-shadow: 2px 1px 4px black;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-box:hover {
+            background-color: #276967;
+            color: white;
+        }
+
+        .nav-box:active {
+            background-color: #33443C;
+        }
+
+        .boxtype {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #F3FADC;
+        box-shadow: 0 0 10px;
+        border-radius: 5px;
+        text-align: center;
+}
+
+.image_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .image-container {
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 5px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-radius: 16px; 
+        transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    }
+
+    .image-container img {
+        transition: transform 0.4s ease, box-shadow 0.4s ease; 
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
+        border-radius: 16px;
+        width: 300px;
+        height: 300px; 
+        object-fit: cover;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .image-container:hover {
+        transform: scale(1.2); 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="biography-section">
+        <div class="background-text">BIOGRAPHY</div> <!-- Added background text -->
+        <h1>BIOGRAPHY</h1>
+        <ul>
+            <li><a href="childhood.html" class="nav-box">CHILDHOOD YEARS</a></li>
+            <li><a href="teenage.html" class="nav-box">TEENAGE YEARS</a></li>
+            <li><a href="college.html" class="nav-box">COLLEGE YEARS</a></li>
+        </ul>
+
+        
+    </div>
+
+
+    <div class="image_container">
+    <div class="image-container"><img src="college1.jpg" alt="Kiddie"></div>
+    <div class="image-container"><img src="college2.jpg" alt="Kiddie2"></div>
+    <div class="image-container"><img src="college3.jpg" alt="Kiddie3"></div>
+    <div class="image-container"><img src="college4.jpg" alt="Kiddie4"></div>
+</div>    
+
+
+<div class="boxtype">
+    <h2 id="CollegeYears">College Years</h2>
+             <p style="text-align: justify; line-height: 1.8; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-indent: 70px; margin: 30px;">Now in her college years, this is the time she doesn’t know what she’s gonna do with her life.<sup>1</sup>
+                She doesn’t know what to do in her future and she can’t see herself doing whatsoever.<sup>2</sup>
+                She’s in the process of finding herself.<sup>3</sup>
+                And honestly, she chose IT as her course because one of her sisters graduated with it and that it’s the most practical option as there are so many jobs that are required in IT because the course itself is broad.<sup>4</sup>
+                She’s currently in her second year in this course in University of the East, and one more semester, she will be in her third year.<sup>5</sup>
+                She’s hopeful that she knows what she’s doing.<sup>6</sup>
+                Even though the course is hard, and cramming is still in her veins, she’s trying to pass everything.<sup>7</sup>
+                Honestly speaking, she’s one of those achievers and loves the praises that came from it.<sup>8</sup>
+                But now, as long as she passed everything, she’s good to go.<sup>9</sup>
+                Every subject sure is hard but in her mind, she could pass through it.<sup>10</sup>
+                Her love for books also grew.<sup>11</sup>
+                Instead of reading wattpad books which were written in <abbr title="Tagalog and English">TagLish</abbr> she’s now reading full English novels written by various authors across the world.<sup>12</sup>
+                It didn’t change the fact that she’s mostly into fiction in romance, fantasy, and historical genres.<sup>13</sup> 
+                But she can read different genres if she likes, it really depends on her mood.<sup>14</sup> 
+                And that she can now buy books, which she is most proud of, with her own money by saving it for weeks.<sup>15</sup>
+                She also made new friends, but mostly boys as this course is more into men's field.<sup>16</sup>
+                As for what happens to her after graduation, she still doesn’t know it yet.<sup>17</sup>
+                But she’s not panicking that much because her sisters are there for her to help her.<sup>18</sup>
+                For her college years and beyond, she thinks, <q>that even though the world is black in white, there are also screaming colors as life goes on no matter what happens, so enjoy it and be proud of it.</q><sup>19</sup>
+                No matter how big or small.<sup>20</sup></p>
+    
+
+
+                <div class="button-container">
+                    <a href="skillsmain.html" class="nav-box">Go Top</a>
+                    <a href="index.html" class="nav-box">Home</a>
+                </div>
+   
+        </div>
+
+</body>
+</html>

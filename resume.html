@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RESUME</title>
+    <link rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4e7;
+            text-align: center;
+            padding: 6p;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #cae4ce;
+            padding: 12px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav li {
+    padding: 10px 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #276967;
+}
+
+nav a:active {
+    color: #33443C;
+}
+
+.resume-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+            position: relative;
+        }
+
+h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 1px 2px 3px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+h3{
+    font-size: 23px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #33443C;
+    text-underline-offset: 5px;
+  }
+
+.background-text {
+            position: absolute;
+            font-size: 150px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.07);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+.home-button {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 20px auto; /* Center at the bottom */
+            background-color: #cae4ce;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            text-shadow: 1px 2px 3px black;
+        }
+
+.home-button:hover {
+            background-color: #276967;
+        }
+
+.home-button:active {
+            background-color: #33443C;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="resume-section">
+        <div class="background-text">RESUME</div>
+        <h1>RESUME</h1>
+    </div>
+
+    <div align="center">
+        <hr size="5" width="100%">
+    </div>
+
+    <div align="left">
+        <h2>Shanizza Harvey</h2>
+        <h4>71 Baco Street. Barangay Santa Teresita,<br>Quezon City, Metro Manila <br>0993-960-7466<br>shanizzaharvey1230@gmail.com</h4>
+        
+        <hr size="5" width="100%">
+        <h3>Career Objective</h3>
+        
+        <p style="text-align: justify; text-indent: 30px;">
+            I am seeking a competitive and challenging environment where I can serve your organization and establish a career for myself. 
+            I aim to obtain a position that challenges me and provides me with the opportunity to reach my full potential professionally and personally.
+        </p>
+
+        <hr size="5">
+        <h3>Skills</h3>
+        <ol>
+            <li>Interpersonal Communication</li>
+            <li>Adaptability</li>
+            <li>Teamwork</li>
+            <li>Active Listening</li>
+            <li>Writing</li>
+        </ol>
+
+        <hr size="5" width="100%">
+        <h3>Education</h3>
+        <p><b>University of The East, Manila</b><br> S.Y. 2023-Present</p>
+        <ul>
+            <li>Student in Information Technology</li>
+        </ul>
+        
+        <p><b>The Nazarene Catholic School, Quiapo Manila</b><br> S.Y. 2021-2023</p>
+        <ul>
+            <li>Graduated with Honors in Science, Technology, Engineering, and Mathematics</li>
+        </ul>
+
+        <hr size="5" width="100%">
+        <h3>Personal Information</h3>
+        <ul>
+            <li>Age: 21</li>
+            <li>Sex: Female</li>
+            <li>Birthday: November 30, 2003</li>
+            <li>Birthplace: Quezon City</li>
+            <li>Civil Status: Single</li>
+            <li>Religion: Islam</li>
+            <li>Height: 157 cm</li>
+            <li>Weight: 42 kg</li>
+        </ul>
+    </div>
+    
+    <a href="index.html" class="home-button">Home</a>
+
+</body>
+</html>

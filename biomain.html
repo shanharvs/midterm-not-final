@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BIOGRAPHY MAIN</title>
+    <link rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4e7;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cae4ce;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        nav li:hover {
+            color: #276967;
+        }
+
+        nav li:active {
+            color: #33443C;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #276967;
+        }
+
+        nav a:active {
+            color: #33443C;
+        }
+
+        .biography-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 1px 2px 3px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .background-text {
+            position: absolute;
+            font-size: 150px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.07);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .biography-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: #cae4ce;
+            color: white;
+            text-shadow: 2px 1px 4px black;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-box:hover {
+            background-color: #276967;
+            color: white;
+        }
+
+        .nav-box:active {
+            background-color: #33443C;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="biography-section">
+        <div class="background-text">BIOGRAPHY</div> <!-- Added background text -->
+        <h1>BIOGRAPHY</h1>
+        <ul>
+            <li><a href="childhood.html" class="nav-box">CHILDHOOD YEARS</a></li>
+            <li><a href="teenage.html" class="nav-box">TEENAGE YEARS</a></li>
+            <li><a href="college.html" class="nav-box">COLLEGE YEARS</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

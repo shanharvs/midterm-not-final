@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LOVER</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cae4ce;
+            padding: 12px 20px;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #276967;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 180px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            text-align: left;
+        }
+
+        .video-container {
+            margin-left: -50px;
+        }
+
+        .video-container video {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-container {
+            max-width: 400px;
+        }
+
+    .text-container h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+    background-color:  #cae4ce; 
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+    .text-container p {
+    background-color: #cae4ce;
+    font-family: Verdana;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 15px 30px; 
+    border-radius: 10px;
+    width: 650px; 
+    display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+
+        }
+
+        .background-text {
+            position: absolute;
+            font-size: 180px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.06);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            z-index: -1;
+        }
+
+        .about {
+            top: 14%;
+            left: 65%;
+        }
+
+        .shanza {
+            bottom: 0.1%;
+            right: 45%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html"> PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="background-text about">About</div>
+    <div class="background-text shanza">Shanizza</div>
+
+    <div class="main-content">
+        <div class="container">
+
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="mandy.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="text-container">
+                <h1>Oh! Hello there! :3 </h1>
+                <p>What brings you here? Anyway, welcome to my webpage! Feel free to scroll through and get to know more about me—my story, my interests, and everything in between. I truly hope you enjoy exploring this little space of mine! This page is a reflection of who I am, my journey, and the things that inspire me. Whether you stumbled upon this by chance or came here intentionally, I appreciate your time.
+
+                    Life is a beautiful collection of moments, dreams, and experiences, and this space is my way of sharing a glimpse of mine with you. So, take a look around, stay as long as you like, and maybe you'll find something that resonates with you. Who knows? Perhaps our paths have crossed for a reason. I hope you leave here with a little more warmth, a little more inspiration, and a sense of connection.
+                    
+                    To the stars who listened and the dreams that are answered. <3</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

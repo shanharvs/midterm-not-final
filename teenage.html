@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TEENAGE</title>
+    <link rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4e7;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cae4ce;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        nav li:hover {
+            color: #276967;
+        }
+
+        nav li:active {
+            color: #33443C;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #276967;
+        }
+
+        nav a:active {
+            color: #33443C;
+        }
+
+        .biography-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 1px 2px 3px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+        font-family: Georgia;
+        display: inline;
+        font-size: 35px;
+        color: #8FC0A9;
+        margin: 20px;
+        text-shadow: 1px 1px 1px black;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #33443C;
+        text-underline-offset: 12px;
+        }
+
+        .background-text {
+            position: absolute;
+            font-size: 150px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.07);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .biography-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 10px 30px 20px 0;
+            background-color: #cae4ce;
+            color: white;
+            text-shadow: 2px 1px 4px black;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-box:hover {
+            background-color: #276967;
+            color: white;
+        }
+
+        .nav-box:active {
+            background-color: #33443C;
+        }
+
+        .boxtype {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #F3FADC;
+        box-shadow: 0 0 10px;
+        border-radius: 5px;
+        text-align: center;
+}
+
+        .image_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .image-container {
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 5px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-radius: 16px; 
+        transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    }
+
+    .image-container img {
+        transition: transform 0.4s ease, box-shadow 0.4s ease; 
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
+        border-radius: 16px;
+        width: 300px;
+        height: 300px; 
+        object-fit: cover;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .image-container:hover {
+        transform: scale(1.2); 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="biography-section">
+        <div class="background-text">BIOGRAPHY</div> <!-- Added background text -->
+        <h1>BIOGRAPHY</h1>
+        <ul>
+            <li><a href="childhood.html" class="nav-box">CHILDHOOD YEARS</a></li>
+            <li><a href="teenage.html" class="nav-box">TEENAGE YEARS</a></li>
+            <li><a href="college.html" class="nav-box">COLLEGE YEARS</a></li>
+        </ul>
+    </div>
+
+
+    <div class="image_container">
+    <div class="image-container"><img src="teenage1.jpg" alt="Kiddie"></div>
+    <div class="image-container"><img src="teenage2.jpg" alt="Kiddie2"></div>
+    <div class="image-container"><img src="teenage3.jpg" alt="Kiddie3"></div>
+    <div class="image-container"><img src="teenage4.jpg" alt="Kiddie4"></div>
+</div>    
+
+
+<div class="boxtype">
+    <h2>Teenage Years</h2>
+        <p style="text-align: justify; line-height: 1.8; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-indent: 70px; margin: 30px;"> When was in teenage years, she started to notice time was moving too fast.<sup>1</sup>
+             One blink, she’s finally a teenager.<sup>2</sup> 
+             At those times, she started having crushes and flirts with random boys at her compound.<sup>3</sup> 
+             She went with her nieces, which is around her age too, to go to them and try to get noticed by those boys.<sup>4</sup> 
+             She still doesn’t like going to school and notices that she hates Mondays because it’s the first day to attend her classes.<sup>5</sup> 
+             She’s a late-night crammer but still passes her quizzes and exams.<sup>6</sup>
+             Her favorite subject is Araling Panlipunan, especially when the lessons are all about history.<sup>7</sup>
+             She’s good at memorizing if she takes it seriously, you see.<sup>8</sup> 
+             During those school days, she met her new two friends, they talked like typical teenage girls and go out to buy street foods after their class.<sup>9</sup>
+             She has had a good social life before and it was thrilling. She also discovers how to read on Wattpad online.<sup>10</sup>
+             And she guiltily admits that she reads books that were not suitable for her age but she loves it.<sup>11</sup>
+             She still reads her sisters’ books behind their backs and imagines herself being the main love interest in those books.<sup>12</sup>
+             Her and her sisters are getting along, or maybe she was a brat when she was a child which is why they were not close before.<sup>13</sup>
+             And like some teenagers, she unfortunately experienced bullying.<sup>14</sup>
+             She was bullied because she sat with one of the boys in her classroom and the girl thinks she likes him.<sup>15</sup>
+             It was one of her most traumatic events that happened in her teenage years. Almost every classmate of hers turned their backs on her.<sup>16</sup>
+             And one time, she heard one of her favorite teachers in AP call her ‘bangag’ because she has eyebags under her eyes.<sup>17</sup>
+             That was the time she realized that even those you look up to are awful and that respect begets respect.<sup>18</sup>
+             Those times ruined her teenage years for her.<sup>19</sup>
+             Issues from her family had risen then and there.<sup>20</sup> 
+             Her Dad also slowly went away and lived in Zamboanga City.<sup>21</sup>
+             It was a good thing her family and some of her friends are there to support her in those years and that she graduated with honors in her junior high in <abbr title="Juan Sumulong High School">JSHS</abbr> and graduated with high honor in senior high in <abbr title= "Nazarene Catholic School">NCS</abbr> located in Quiapo, Manila.<sup>22</sup>
+             She thinks, <q>her teenage years are is black and white as she experienced terrific happiness and lots of sadness.</q><sup>23</sup></p>
+
+
+
+             <div class="button-container">
+                <a href="skillsmain.html" class="nav-box">Go Top</a>
+                <a href="index.html" class="nav-box">Home</a>
+            </div>
+   
+        </div>
+
+</body>
+</html>

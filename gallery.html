@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GALLERY</title>
+    <link rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f4e7;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cae4ce;
+    padding: 12px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #276967;
+}
+
+nav a:active {
+    color: #33443C;
+}
+
+        .skills-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 1px 2px 3px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .background-text {
+            position: absolute;
+            font-size: 150px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.07);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .skills-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: #cae4ce;
+            color: white;
+            text-shadow: 2px 1px 4px black;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-box:hover {
+            background-color: #276967;
+            color: white;
+        }
+
+        .nav-box:active {
+            background-color: #33443C;
+        }
+
+.image_container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 40px;
+            max-width: 10%;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        
+        .image-container {
+            width: 250px; 
+            height: 250px;
+            margin-top: 60px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Caption Styling */
+        .image-container::before {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover Effects */
+        .image-container:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-container:hover::before {
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="skills-section">
+        <div class="background-text">PHOTO GALLERY</div>
+        <h1>PHOTO GALLERY</h1>
+    </div>
+
+</div>
+
+
+<div class="image_container">
+    <div class="image-container" data-title="Library Feels"><img src="gallery1.jpg" alt="Kiddie"></div>
+    <div class="image-container" data-title="Feeling Goofy"><img src="gallery2.jpg" alt="Kiddie2"></div>
+    <div class="image-container" data-title="Why, though?"><img src="gallery3.jpg" alt="Kiddie3"></div>
+    <div class="image-container" data-title="Still Feeling Goofy"><img src="gallery4.jpg" alt="Kiddie4"></div>
+    <div class="image-container" data-title="Feeling like a Pookie"><img src="gallery5.jpg" alt="Kiddie5"></div>
+    <div class="image-container" data-title="School Days"><img src="gallery6.jpg" alt="Kiddie6"></div>
+    <div class="image-container" data-title="Kyotie"><img src="gallery7.jpg" alt="Kiddie7"></div>
+    <div class="image-container" data-title="Seriouz"><img src="gallery8.jpg" alt="Kiddie8"></div>
+    <div class="image-container" data-title="Well..."><img src="gallery9.jpg" alt="Kiddie9"></div>
+    <div class="image-container" data-title="Hehe"><img src="gallery10.jpg" alt="Kiddie10"></div>
+    <div class="image-container" data-title="Nerdz"><img src="gallery11.jpg" alt="Kiddie11"></div>
+    <div class="image-container" data-title="Oh, well..."><img src="gallery12.jpg" alt="Kiddie12"></div>
+    <div class="image-container" data-title="It was time for SB"><img src="gallery13.jpg" alt="Kiddie13"></div>
+    <div class="image-container" data-title="Broke my fast that day"><img src="gallery14.jpg" alt="Kiddie14"></div>
+    <div class="image-container" data-title="Bartender was very Gwapo"><img src="gallery15.jpg" alt="Kiddie15"></div>
+    <div class="image-container" data-title="Okay, then"><img src="gallery16.jpg" alt="Kiddie16"></div>
+    <div class="image-container" data-title="Meow"><img src="gallery17.jpg" alt="Kiddie17"></div>
+    <div class="image-container" data-title="Cheers!"><img src="gallery18.jpg" alt="Kiddie18"></div>
+    <div class="image-container" data-title="Sweet Momentz"><img src="gallery19.jpg" alt="Kiddie19"></div>
+    <div class="image-container" data-title="Mirror Selfie"><img src="gallery20.jpg" alt="Kiddie20"></div>
+</div>    
+
+</body>
+</html>
